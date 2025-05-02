@@ -48,7 +48,7 @@ module dut(CLK,
 	   read_data,
 	   read_rdy);
 	initial begin
-  $dumpfile("tests/dut.vcd"); 
+		$dumpfile("hdl/dut.vcd"); 
   $dumpvars(0, dut);
 end
 
