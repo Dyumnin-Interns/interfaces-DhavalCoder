@@ -47,6 +47,11 @@ module dut(CLK,
 	   read_en,
 	   read_data,
 	   read_rdy);
+	initial begin
+  $dumpfile("tests/dut.vcd"); 
+  $dumpvars(0, dut);
+end
+
   input  CLK;
   input  RST_N;
 
