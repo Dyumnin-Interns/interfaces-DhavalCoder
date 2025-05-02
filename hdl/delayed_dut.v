@@ -62,6 +62,10 @@ module dut(CLK,
   input  read_en;
   output read_data;
   output read_rdy;
+	 initial begin
+    $dumpfile("delayed_dut.vcd");   // Specify the name of the VCD file to generate
+    $dumpvars(0, delayed_dut);      // Dump all signals in the delayed_dut module
+  end
 
   // signals for module outputs
   reg read_data;
