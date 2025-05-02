@@ -170,8 +170,8 @@ module dut(CLK,
   assign y_ff$DEQ = y_ff$EMPTY_N && pwyff_deq$whas ;
   assign y_ff$CLR = 1'b0 ;
 	 initial begin
-    $dumpfile("tests/dut.vcd");  // Ensure path matches GitHub Actions artifact path
-    $dumpvars(0, dut);           // Dump everything under module "dut"
+ $dumpfile("dut.vcd");
+    $dumpvars(0, dut);          
   end
 endmodule  // dut
 
