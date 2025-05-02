@@ -47,11 +47,7 @@ module dut(CLK,
 	   read_en,
 	   read_data,
 	   read_rdy);
-	initial begin
-		$dumpfile("sim_build/dut.vcd"); 
-  $dumpvars(0, dut);
-end
-
+	
   input  CLK;
   input  RST_N;
 
