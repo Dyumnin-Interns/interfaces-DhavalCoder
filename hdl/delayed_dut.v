@@ -47,10 +47,7 @@ module dut(CLK,
 	   read_en,
 	   read_data,
 	   read_rdy);
-	initial begin
-		$dumpfile("hdl/delayed_dut.vcd");   // <-- this path matches what your GitHub action expects
-  $dumpvars(0, dut);
-end
+	
 
   input  CLK;
   input  RST_N;
